@@ -18,7 +18,7 @@ We do the treasure hunting and monster fighting for you
 # Reinforcement Learning - Q-Learning
 
 I used Q-learning startegy for my reinforcement learning algorithm, the Q-learning algorithm is given by the equation:  
-$Q(S_t, A_t) = Q(S_t, A_t) + \alpha $
+$Q(S_t,%20A_t)$
 
 # Results
 
