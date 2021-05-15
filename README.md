@@ -25,7 +25,7 @@ In the reward table, each step the hunters move will have a cost except treasure
 
 Blank road = -1   
 Rock = -5  
-Monster = -10
+Monster = -10  
 Treasure = +10
 
 ## Action
