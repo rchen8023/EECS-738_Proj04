@@ -17,12 +17,31 @@ We do the treasure hunting and monster fighting for you
 
 # Reinforcement Learning - Q-Learning
 
-I used Q-learning startegy for my reinforcement learning algorithm, the Q-learning algorithm is given by the equation:  
-$Q(S_t,%20A_t)$
+I used Q-learning startegy for my reinforcement learning algorithm
+
+## Reward table
+
+In the reward table, each step the hunters move will have a cost except treasure cell, the rock cell and monster cell will have more cost.
+
+Blank road = -1   
+Rock = -5  
+Monster = -10
+Treasure = +10
+
+## Action
+
+The hunter has four actions at each state: UP, DOWN, LEFT, RIGHT  
+If the hunter at the edge of the map and trying to move out of the map, then hunter will stay in current state, but will still have cost.
+
+## Q Table
+
+My Q-table is a n by p matrix based on map size, each element in matrix is a state of hunter and contains 4 Q vlaues for 4 action
 
 # Results
 
-
+After implementing the reinforcement learning, the model is able to find the best path to treasure and avoid rocks and monsters. And by the testing, the model work for different entry point and different map as well 
 
 
 # References
+https://medium.com/@curiousily/solving-an-mdp-with-q-learning-from-scratch-deep-reinforcement-learning-for-hackers-part-1-45d1d360c120  
+https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/  
